@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .stretch { 
+  border: 8px solid transparent;
+  padding: 10px;
+  border-image: url(https://c.pxhere.com/images/c4/56/a9d6dfc04d5ad4b03669dcc2523c-1617980.jpg!d) 50;
+}
+.repeat { 
+  border: 8px solid transparent;
+  padding: 10px;
+  border-image: url(https://c.pxhere.com/images/c4/56/a9d6dfc04d5ad4b03669dcc2523c-1617980.jpg!d) 50 repeat;
+}
+.round { 
+  border: 8px solid transparent;
+  padding: 10px;
+  border-image: url(https://c.pxhere.com/images/c4/56/a9d6dfc04d5ad4b03669dcc2523c-1617980.jpg!d) 50 round;
+}
+.percent { 
+  border: 8px solid transparent;
+  padding: 10px;
+  border-image: url(https://c.pxhere.com/images/c4/56/a9d6dfc04d5ad4b03669dcc2523c-1617980.jpg!d) 20% round;
+}
+
+/* Other styling */
+p {
+  font-family: Arial;
+}
+    </style>
+</head>
+<body>
+    <p class="stretch">This is a stretched image border. Since stretch is the default value, you can leave it out of the CSS. </p>
+<p class="repeat">This is a repeating image border.</p>
+<p class="round">This is a rounded image border. That means the image is tiled or repeated, but if it does not fill the area with a whole number of tiles, the image is rescaled so it fits.</p>
+<p class="percent">This is a rounded image border with its border-slice-property defined by a percentage.</p>
+</body>
+</html>
